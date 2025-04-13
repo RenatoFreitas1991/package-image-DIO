@@ -3,19 +3,19 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as f:
     page_description = f.read()
 
-with open("requirements.txt") as f:
+with open("requirements.txt", "r") as f:
     requirements = f.read().splitlines()
 
 setup(
-    name="package_name",
+    name="image-processing-renato",
     version="0.0.1",
-    author="my_name",
-    author_email="my_email",
-    description="My short description",
+    author="Renato Freitas da Silveira",
+    author_email="renatofsilveirax@gmail.com",
+    description="pacote criado para desafio de Criando um Pacote de Processamento de Imagens com Python",
     long_description=page_description,
     long_description_content_type="text/markdown",
-    url="my_github_repository_project_link"
+    url="https://github.com/RenatoFreitas1991/package-image-DIO.git",
     packages=find_packages(),
     install_requires=requirements,
-    python_requires='>=3.8',
+    python_requires='>=3.12',
 )
